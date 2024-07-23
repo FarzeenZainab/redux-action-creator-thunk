@@ -1,7 +1,7 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
 
 const cartSlice = createSlice({
-  name: 'cart',
+  name: "cart",
   initialState: {
     items: [],
     totalQuantity: 0,
@@ -40,6 +40,12 @@ const cartSlice = createSlice({
     },
   },
 });
+
+// action creator thunks
+
+const sendCartData = (cartData) => {
+  return { type: "", payload: "" };
+};
 
 export const cartActions = cartSlice.actions;
 
